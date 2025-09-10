@@ -1,38 +1,186 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #f7f8fc 0%, #e1eaff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #2c3e50;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: color 0.2s ease, background 0.2s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-logo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 8vw;              /* Responsive width (8% of viewport width) */
+  max-width: 64px;         /* Limit max size */
+  min-width: 32px;         /* Avoid being too small */
+  height: auto;            /* Maintain aspect ratio */
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover .card-logo {
+  transform: scale(1.1) rotate(5deg); /* Interactive on hover */
+  opacity: 1;
+}
+
+
+.nav-link:hover {
+  color: #007bff !important;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+a.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.2s;
+}
+
+ footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #686767;
+} 
+@media (max-width: 576px) {
+  footer {
+      font-size: 13px;
+      padding: 30px 10px;
+  }
+}
+
+.bg-custom-blue {
+  background-color: #e8f0fe;  /* light blue */
+}
+
+.bg-custom-dark {
+  background-color: #1c1c1c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-section-gray {
+  background-color: #f8f9fa;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tech-badges-grid {
+  display: flex;
+  gap: 20px 24px; /* generous spacing */
+  margin-top: 10px;
+}
+
+.badge {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.badge:hover {
+  background-color: #15b300 !important; /* darker blue on hover */
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+
+.navbar-brand img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+.navbar {
+  background: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important; /* or a darker color */
+  transition: background 0.3s ease-in-out;
+}
+
+
+
+
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* remove padding-top so hero starts from very top */
+  padding-top: 0;
+}
+
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.quote {
+  font-size: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.author {
+  margin-top: 20px;
+  font-size: 1rem;
 }
