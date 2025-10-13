@@ -16,7 +16,10 @@ function App() {
       <Navbar/>
       
 
+<<<<<<< HEAD
       <Home />   {/*  Hero background behind Navbar */}
+=======
+>>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016
       <div className="container mt-5">
         <section id="about" className="py-5"><Why /></section>
         <section id="education" className="py-5"><About/></section>

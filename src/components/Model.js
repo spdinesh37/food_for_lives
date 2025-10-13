@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/components/Model.js
 import React from "react";
 import { motion } from "framer-motion";
@@ -70,6 +71,14 @@ function Model() {
         ))}
       </div>
     </section>
+=======
+function Model() {
+  return (
+    <div>
+      <h2>Our Model</h2>
+      <p>Explain your organizational model, workflow, or approach.</p>
+    </div>
+>>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016
   );
 }
 

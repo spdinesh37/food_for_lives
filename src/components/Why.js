@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -217,5 +218,15 @@ const Why = () => {
     </section>
   );
 };
+=======
+function Why() {
+  return (
+    <div>
+      <h2>Why Choose Us</h2>
+      <p>Some information about why your organization is special.</p>
+    </div>
+  );
+}
+>>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016
 
 export default Why;

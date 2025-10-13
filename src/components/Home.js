@@ -1,11 +1,20 @@
 import React from "react";
 
+<<<<<<< HEAD
 const Home = () => {
   return (
     <section
       id="home"
       className="hero"
       style={{ backgroundImage: "url('/Martin_Luther_King.jpg')" }}
+=======
+
+
+const Home = () => {
+  return (
+    <section className="hero"
+   style={{ backgroundImage: `url(/Martin_Luther_King.jpg)` }}
+>>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016
     >
       <div className="overlay">
         <div className="quote">
