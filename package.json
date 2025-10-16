@@ -1,10 +1,9 @@
 {
-  "homepage": "https://spdinesh37.github.io/Food_For_Lives",
+  "homepage": "https://spdinesh37.github.io/food_for_lives/",
   "name": "food-for-lives",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-  
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
@@ -44,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
