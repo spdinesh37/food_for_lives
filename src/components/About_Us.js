@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -65,15 +64,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-=======
-function About() {
-  return (
-    <div>
-      <h2>About Us</h2>
-      <p>Information about your organization, mission, and vision.</p>
-    </div>
-  );
-}
-
-export default About;
->>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016

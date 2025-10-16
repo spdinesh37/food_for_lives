@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // src/components/Departments.js
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -207,15 +206,5 @@ const Departments = () => {
     </section>
   );
 };
-=======
-function Departments() {
-  return (
-    <div>
-      <h2>Departments</h2>
-      <p>Details about the departments in your organization.</p>
-    </div>
-  );
-}
->>>>>>> ed50a2b85e969a84fb08d4ccd2e00cc336e14016
 
 export default Departments;
