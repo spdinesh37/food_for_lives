@@ -5,7 +5,7 @@ const Home = () => {
     <section
       id="home"
       className="hero"
-      style={{ backgroundImage: "url('/Martin_Luther_King.jpg')" }}
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Martin_Luther_King.jpg)` }}
     >
       <div className="overlay">
         <div className="quote">

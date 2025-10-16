@@ -16,7 +16,7 @@ const Navbar = () => {
       <nav className={`navbar navbar-expand-lg ${scrolled ? "scrolled" : ""}`}>
         <div className="container">
           <a className="navbar-brand" href="#home">
-            <img src="/FFL_Logo.png" alt="Logo" />
+            <img src={`${process.env.PUBLIC_URL}/FFL_Logo.png`} alt="Logo" />
           </a>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
@@ -35,7 +35,7 @@ const Navbar = () => {
       {/* Hero directly below navbar */}
       <section
         className="hero"
-        style={{ backgroundImage: `url(/Martin_Luther_King.jpg)` }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Martin_Luther_King.jpg)` }}
       >
         <div className="overlay">
           <div className="quote">
